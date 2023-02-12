@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/f9727a4594.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Inter:wght@200;300&display=swap"  rel="stylesheet">
+</head>
+    <div class="contenedor">
+<body class="fondo" background="imagenes/fondo.png" width="100%">
+
+    <header class="cabeza">
+
+        <img class="logo" src="imagenes/Vector.png" alt="logo de alura">
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <textarea class="text-area" cols="30" rows="8" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion"> ¡ solo letras minusculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar!</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar!</button>
+            </div>
+        </section>
+        <section >
+            <div>
+                <textarea class="mensaje" cols="20" rows="12" id="mensaje"></textarea>
+
+
+            </div>
+            <div>
+                <button class="btn-copiar" id="copiar" onclick="btnCopiar()"> Copiar</button>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer class="redesSociales">
+    <div class="iconos">
+        <a href="https://www.linkedin.com/in/andres-lecointe/" class="fa-brands fa-linkedin"></a>
+        <a class="fa-brands fa-github"></a>
+    </div>
+    <p class="copyright">&copy Copyright Creado por Isaac Lecointe - 2023</p>
+</footer>
+</div>
+</html>
