@@ -200,10 +200,7 @@ footer {
         flex-direction: column;
         position: static;
     }
-    .fondo{
-        background-attachment: fixed;
-        background-size: cover;
-    }
+    
     * {
         line-height: normal;
     }
