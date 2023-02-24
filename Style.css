@@ -201,10 +201,10 @@ footer {
     }
 
     .redesSociales {
-        width: 93%;
+        width: 80%;
         position: absolute;
-        padding: 20px;
-        bottom: -100px;
+        padding: 445px;
+        bottom: -80px;
     } 
     .text-area {
         width: 100%;
@@ -245,7 +245,7 @@ footer {
         font-size: 22px;
         margin-top: 74%;
         margin-left: -95%;
-
+        font-weight: bold;
     }
 
     .btn-copiar {
