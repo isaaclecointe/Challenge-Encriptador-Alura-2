@@ -201,9 +201,9 @@ footer {
     }
 
     .redesSociales {
-        width: 80%;
+        width: 90%;
         position: absolute;
-        padding: 445px;
+        padding: 20px;
         bottom: -80px;
     } 
     .text-area {
@@ -242,7 +242,7 @@ footer {
     .mensaje {
         background-size: 600px;
         width: 80%;
-        font-size: 22px;
+        font-size: 25px;
         margin-top: 74%;
         margin-left: -95%;
         font-weight: bold;
@@ -252,7 +252,7 @@ footer {
         position: absolute;
         margin-left: -273px;
         width: 107px;
-        margin-top: 130%;
+        margin-top: 146%;
         font-size: 18px;
         height: 40px;
     }
