@@ -194,24 +194,29 @@ footer {
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
 
     .contenedor{
         flex-direction: column;
         position: static;
+    }
+    .fondo{
+        background-attachment: fixed;
+        background-size: cover;
     }
     * {
         line-height: normal;
     }
 
     .redesSociales {
-        width: 90%;
+        width: 93%;
         position: absolute;
-        padding: 20px;
+        padding: 15px;
+        bottom: -50px;
     } 
     .text-area {
         width: 100%;
-        font-size: 20px;
+        font-size: 18px;
         margin-left: -60px;
 
     }
@@ -220,6 +225,9 @@ footer {
         width: 100%;
         font-size: 18px;
         margin-left: -60px;
+    }
+    .botones{
+        margin-top: -10px;
     }
 
     .btn-encriptar {
@@ -241,18 +249,18 @@ footer {
 
     .mensaje {
         background-size: 600px;
-        width: 90%;
+        width: 80%;
         font-size: 22px;
-        margin-top: 90%;
-        margin-left: -100%;
+        margin-top: 74%;
+        margin-left: -95%;
 
     }
 
     .btn-copiar {
         position: absolute;
-        margin-left: -300px;
+        margin-left: -273px;
         width: 107px;
-        margin-top: 135%;
+        margin-top: 130%;
         font-size: 18px;
         height: 40px;
     }
