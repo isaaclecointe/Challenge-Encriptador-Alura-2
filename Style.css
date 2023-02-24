@@ -76,7 +76,7 @@ main {
 
 .mensaje {
 
-    background-image: url("imagenes/Ningun\ mensaje\.png");
+    background-image: url("./imagenes/ningun\ mensaje.png");
     background-position: center;
     background-color: transparent;
     background-size: 760px;
@@ -194,53 +194,12 @@ footer {
 
 }
 
-@media tag and (max-width:1024px)  {
-    .text-area {
-        font-size: 22px;
-        width: 100%;
-        margin-left: -60px;
-    }
-
-    .informacion {
-        width: 100%;
-        font-size: 22px;
-        margin-left: -60px;
-    }
-
-    .btn-encriptar {
-        font-size: 22px;
-        margin-top: 15px;
-        height: 60px;
-        width: 250px;
-        margin-left: -70px;
-    }
-
-    .btn-desencriptar {
-        font-size: 22px;
-        margin-top: 15px;
-        width: 250px;
-        height: 60px;
-        margin-left: 50px;
-
-    }
-
-    .mensaje {
-        margin-left: 50px;
-        margin-top: 10px;
-        padding-left: 20px;
-        height: 80%;
-    }
-
-    .btn-copiar {
-        height: 60px;
-        margin-left: 108px;
-        margin-top: 410px;
-        width: 280px
-    }
-}
-
 @media screen and (max-width:480px) {
 
+    .contenedor{
+        flex-direction: column;
+        position: static;
+    }
     * {
         line-height: normal;
     }
@@ -249,12 +208,7 @@ footer {
         width: 90%;
         position: absolute;
         padding: 20px;
-    }
-
-    .fondo {
-        width: 100%;
-    }
-
+    } 
     .text-area {
         width: 100%;
         font-size: 20px;
