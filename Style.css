@@ -1,0 +1,647 @@
+* {
+    font-family: 'courier';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 32px;
+    line-height: 150%;
+    
+    
+}
+
+body{
+    background-color: #242a36;
+}
+
+.modal{
+    
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    animation: modal 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.contenido {
+   margin: auto; 
+   width: 40%;
+   height: 40%;
+   background: black;
+   border-radius: 10px; 
+   color: #0eb5bb;
+   align-items: center;
+   padding: 3em 2.5em; 
+   place-items: center;
+   border: 2px solid #0eb5bb;
+   box-shadow: 8px 8px 10px rgba(0, 0, 0, 2.5);
+   animation: luz 10s infinite, sombra 10s infinite;
+   
+}
+
+
+.usuario{
+    border-radius: 10px ;
+    border: 1px solid #888;
+    font-size: 20px;
+    padding: 6px;
+    margin-bottom: 30px;
+    width: 80%;
+    box-sizing:border-box ;
+    background-color: black; 
+    color:#0eb5bb;
+    font-family: monospace;
+    margin-left: 8%;
+   
+}
+
+
+@keyframes luz {
+    0% { border-color:  rgba(5, 171, 221, 0.8); }
+    25% { border-color: rgba(97, 217, 253, 0.8); }
+    50% { border-color:  rgba(19, 226, 226, 0.8); }
+    75% { border-color:  rgba(253, 255, 255, 0.8); }
+    100% { border-color:  rgba(12, 84, 126, 0.8); }
+  }
+
+  @keyframes sombra {
+    0% { box-shadow: 0 0 10px  rgba(5, 171, 221, 0.8); }
+    25% { box-shadow: 0 0 10px rgba(97, 217, 253, 0.8); }
+    50% { box-shadow: 0 0 10px rgba(19, 226, 226, 0.8); }
+    75% { box-shadow: 0 0 10px rgba(253, 255, 255, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(12, 84, 126, 0.8); }
+  }
+
+
+.modal span{
+    margin-bottom: 40px;
+}
+
+.modal input{
+    margin-bottom: 40px;
+}
+
+.usuario:focus{
+    border-color: white;
+    outline: none;
+}
+
+.btnCerrar{
+    margin-top: 100px;
+    margin-left: 43%;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 8px 25px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.btnCerrar:hover{
+   border: 2px solid #0eb5bb;         
+    color: #ddd;
+}
+
+.textoNormal{
+    display: block;
+    font-size: 24px;
+    font-family: "Consolas", monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 45ch;
+
+    animation: tipeo 5s steps(37), blink .10s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.textoTablet{
+    display: none;
+}
+
+.textoMovil{
+    display: none;
+}
+
+@keyframes tipeo {
+    from {width: 0}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+    
+}
+
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.contenedor {
+    position: relative;
+    height: 100vh;
+   
+}
+
+
+.material-symbols-outlined {
+    font-size: 50px;
+    color: #0eb5bb;
+    margin-left: 50%;
+    cursor: pointer;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.texto-icono{
+    display: block;
+    margin-left: 53%;
+    font-size: 16px;
+    color: #ddd;
+    font-family: "consola", monospace;
+}
+
+
+
+/* .fondo-contenedor {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */
+
+/* .fondo-contenedor fondo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate (-50% -50%);
+} */
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 2%;
+}
+
+.fondo {
+       
+    background-color: rgb(27, 27, 27); /*22, 25, 39*/
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+
+}
+
+
+.text-area {
+    
+    background: transparent;
+    border: none;
+    color: #0eb5bb;
+    margin-top: 20px;
+    text-transform: lowercase;
+
+}
+
+::placeholder {
+    color: #0eb5bb;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.informacion {
+    font-size: 22px;
+    color: #da143f;
+
+
+}
+
+.mensaje {
+    
+    background-color: transparent;
+    background-size: 760px;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    color: rgb(39, 202, 24);
+    margin-left: 300px;
+    margin-top: 10px;
+    padding-left: 20px;
+    position: absolute;
+    height: 550px;
+    border: none;
+    z-index: -1;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+@keyframes luz-rgb {
+    0% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+    25% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); }
+    50% { box-shadow: 0 0 10px rgba(0, 0, 255, 0.8); }
+    75% { box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(255, 0, 255, 0.8); }
+  }
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+
+}
+
+.btn-desencriptar {
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 2.5);
+    overflow: hidden;
+    animation: luz-rgb 5s infinite; 
+
+}
+
+.btn-encriptar {
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 2.5);
+    overflow: hidden;
+    animation: luz-rgb 5s infinite; 
+
+
+}
+
+.btn-copiar {
+
+    border: 1px solid white;
+    border-radius: 20px;
+    color: #0eb5bb;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 475px;
+    position: absolute;
+    width: 336px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 2.5);
+    background: transparent;
+    display: none;
+    right: 150px;
+}
+
+.btn-copiar:hover{
+    border: 2px solid #0eb5bb;
+    color: white;
+}
+
+.redesSociales {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+.iconos {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes luz-giratoria {
+    0% { border: 10px rgb(71, 194, 243); transform: rotate(0deg);}
+    25% { border: 10px rgb(71, 194, 243); transform: rotate(90deg);}
+    50% { border: 10px rgb(71, 194, 243); transform: rotate(180deg);}
+    75% { border: 10px rgb(71, 194, 243); transform: rotate(270deg);}
+    100% { border: 10px rgb(71, 194, 243); transform: rotate(360deg);}
+    
+}
+
+  
+.iconos a {
+    text-decoration: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: transparent;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+    transition: all .4s ease-in-out;
+    overflow: hidden;
+     animation: luz-giratoria 5s infinite;  
+    animation: luz-rotativa 5s infinite delay iteration-count direction fill-mode;
+}
+
+.iconos a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+footer {
+    padding: 50px;
+    color: white;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+
+}
+
+.copyright {
+    
+    font-size: 20px;
+    padding-top: 20px;
+    text-align:center;
+
+}
+
+@media screen and (max-width: 1200px ){
+    
+    .logo{
+
+        width: 9%;
+    }
+    
+    .contenido{
+        
+        width: 80%;
+        height: 40%;
+    }
+
+    .usuario{
+        height: 12%;
+        font-size: 25px;
+    }
+
+    .text-area{
+        height: 350px;
+        font-size: 40px;
+    }
+
+    .informacion{
+        font-size: 32px;
+    }
+
+    .modal{
+        display: none;
+    }
+
+    .material-symbols-outlined {
+        
+        color: #0eb5bb;
+        margin: auto;
+        margin-left: 75%;
+        cursor: pointer;
+       font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 800,
+      'opsz' 24 
+    }
+    
+    .texto-icono{
+        display: block;
+        margin-left: 85%;
+        font-size: 25px;
+        color: #ddd;
+        font-family: "consola", monospace;
+    }
+
+    /* .btnCerrar{
+        width: 100px;
+        height: 60px;
+        margin-right: 50%;
+        font-size: 30px;
+    } */
+    
+    .redesSociales{
+       
+        position:fixed;
+        width: 90%;
+        height: 6%;
+      
+    }
+    .textoNormal{
+        display: none;
+    }
+
+    .textoTablet{
+    display: block;
+    font-size: 30px;
+    font-family: "Consolas", monospace;
+    white-space: nowrap;
+    border-right: 10px solid;
+    width: 41ch;
+   
+    animation: tipeo 5s steps(41), blink .10s infinite step-end alternate;
+    overflow: hidden;
+
+    }
+
+    .mensaje{
+     
+          margin-top: 70%;
+          margin-left: -85%;
+          font-size: 38px;
+          width: 150%;
+          height: 600px;
+          
+    }
+   
+    .btn-copiar{
+        margin-top: 115%;
+        margin-right: 12%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    
+    * {
+        line-height: normal;
+    }
+
+    .modal{
+        display: none;
+        height: 150ch;
+        
+    }
+
+    .contenido{
+       margin-top: 35%;
+        width: 80%;
+        height: 35%;   
+        padding: 5% 5%;
+            
+    }
+
+    .usuario{
+        height: 10%;
+        font-size: 20px;
+    }
+
+    .btnCerrar{
+      margin-left: 32%;
+      width: 90px;
+      height: 40px;
+      
+    }
+ 
+   .textoNormal{
+            display: none;                  
+   }
+
+   .textoTablet{
+    display: none;
+   }
+
+   .textoMovil{
+    
+    display: block;
+    font-size: 24px;
+    font-family: "Consolas", monospace;
+    white-space: nowrap;
+    border-right: 10px solid;
+    width: 22ch;
+   
+    animation: tipeo 5s steps(22), blink .10s infinite step-end alternate;
+    overflow: hidden;
+
+   }
+
+
+
+    .redesSociales {
+        width: 90%;
+        position: relative;
+        padding: 20px;
+        bottom: -400px;  /*pendiente de arreglar en versionde moviles dispersion de la pagina*/
+    } 
+
+    .logo{
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 8%;
+    }
+
+    .material-symbols-outlined {
+        width: 12%;
+        color: #0eb5bb;
+        margin-top: -120px;
+        margin-left: 80%;
+        cursor: pointer;
+       font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24 
+    }
+    
+    .texto-icono{
+        display: block;
+        margin-left: 80%;
+        font-size: 16px;
+        color: #ddd;
+        font-family: "consola", monospace;
+    }
+    
+    .text-area {
+        width: 100%;
+        height: 300px;
+        font-size: 26px;
+        margin-left: -60px;
+
+    }
+
+    .informacion {
+        font-family: "consolas", monospace;
+        width: 100%;
+        font-size: 21px;
+        margin-left: -60px;
+        margin-top: 20px;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100;
+        padding: 5px 30px;
+
+    }
+
+    .btn-encriptar {
+        font-family: "consolas", monospace;
+        font-size: 21px;
+        margin-top: 15px;
+        height: 50px;
+        width: 130%;
+        margin-left: -75px;
+    }
+
+    .btn-desencriptar {
+        font-family: "consolas", monospace;
+        margin-top: -70px;
+        font-size: 21px;
+        margin-top: 15px;
+        width: 130%;
+        height: 50px;
+        margin-left: -75px;
+       
+
+    }
+
+    .mensaje {
+        background-size: 70%;
+        width: 80%;
+        font-size: 25px;
+        margin-top: 162%;
+        margin-left: -95%;
+        font-weight: bold;
+        height: 350px;
+    }
+
+    .btn-copiar {
+       
+        margin-right: -50px;
+        width: 50%;
+        margin-top: 220%;
+        font-size: 18px;
+        height: 50px;
+        
+    }
+
+    .iconos {
+        min-width: 250px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
