@@ -1,4 +1,6 @@
 
+
+
 //e --> enter
 //o --> ober
 //i --> imes
@@ -8,6 +10,7 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 const copiar = document.querySelector("copiar");
+
 const iconoPegar = document.getElementById("Pegar");
 
 const contieneModal = document.getElementById("ventanaModal");
@@ -48,12 +51,17 @@ var textoArea = "/Bienvenido/ingrese/su/texto>_";
 function btnEncriptar() {
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = "" , animacionMaquinaEscribir(textoEncriptado, document.getElementById("mensajeEncriptado"));
+
+
+
     textArea.value = "";
     mensaje.style.backgroundImage = "none";
     document.getElementById("copiar").style.display = "block"
 }
 
+
 // funcion para encriptar el texto 
+
 function encriptar(stringEncriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringEncriptada = stringEncriptada.toLowerCase()
@@ -66,6 +74,7 @@ function encriptar(stringEncriptada) {
     return stringEncriptada
 }
 
+
 // funcion del boton de desencriptar que llama a la funcion desencriptar 
 function btnDesencriptar() {
     const textoEncriptado = desencriptar(textArea.value)
@@ -77,6 +86,8 @@ function btnDesencriptar() {
 }
 
 // funcion para desencriptar el texto 
+
+
 function desencriptar(stringDesencriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringDesencriptada = stringDesencriptada.toLowerCase()
@@ -90,6 +101,7 @@ function desencriptar(stringDesencriptada) {
 }
 
 
+
 // funcion del boton copiar que copia el texto encriptado 
 function btnCopiar() {
    const copyText = document.getElementById("mensajeEncriptado");
@@ -100,6 +112,7 @@ function btnCopiar() {
    textArea.value = "";
    mensaje.value = ""
    
+
 }
 
 iconoPegar.addEventListener('click', () => {
@@ -136,3 +149,6 @@ setTimeout (function() {
     var mensaje = document.getElementById("mensajeEncriptado");
     animacionMaquinaEscribir(mensajeEncriptado, mensaje);
 }, tiempoEspera);
+
+
+
